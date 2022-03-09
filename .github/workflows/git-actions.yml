@@ -1,0 +1,16 @@
+name: my-actions
+on: [push]
+
+jobs:
+    my-helloworld-job:
+        runs-on: ubunto-latest
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Say Hello my-helloworld-job
+            run: echo 'Hello World'
+
+          - name: View a file
+            run:
+              echo 'Viewing the file: '
+              cat requirements.txt
