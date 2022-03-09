@@ -11,6 +11,6 @@ jobs:
             run: echo 'Hello World'
 
           - name: View a file
-            run:
+            run: |
               echo 'Viewing the file: '
               cat requirements.txt
